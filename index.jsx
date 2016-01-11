@@ -99,10 +99,10 @@ export default function Dimensions ({ getHeight = defaultGetHeight, getWidth = d
 
       onResize = () => {
         if (this.rqf) return
-        this.rqf = window.requestAnimationFrame(() => {
-          this.rqf = null
+        //this.rqf = window.requestAnimationFrame(() => {
+          //this.rqf = null
           this.updateDimensions()
-        })
+        //})
       }
 
       componentDidMount () {
